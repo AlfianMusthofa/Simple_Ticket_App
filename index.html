@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <form action="">
+        <div class="title">
+            <h3>UIN Travel</h3>
+        </div>
+        <div class="name-field">
+            <label for="username">Nama</label>
+            <input type="text" id="username" required autofocus>
+        </div>
+        <div class="tujuan-field">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Pilih tujuan
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Bandung</a></li>
+                    <li><a class="dropdown-item" href="#">Jakarta</a></li>
+                    <li><a class="dropdown-item" href="#">Surabaya</a></li>
+                    <li><a class="dropdown-item" href="#">Tangerang</a></li>
+                    <li><a class="dropdown-item" href="#">Denpasar</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="price-field">
+            <label for="price">Harga tiket (Rp)</label>
+            <input type="text" id="price" readonly>
+        </div>
+        <div class="jumlah">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Jumlah tiket
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2</a></li>
+                    <li><a class="dropdown-item" href="#">3</a></li>
+                    <li><a class="dropdown-item" href="#">4</a></li>
+                    <li><a class="dropdown-item" href="#">5</a></li>
+                    <li><a class="dropdown-item" href="#">6</a></li>
+                    <li><a class="dropdown-item" href="#">7</a></li>
+                    <li><a class="dropdown-item" href="#">8</a></li>
+                    <li><a class="dropdown-item" href="#">9</a></li>
+                    <li><a class="dropdown-item" href="#">10</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="member">
+            <input type="checkbox" name="" id="member">
+            <label for="member">Member</label>
+        </div>
+        <div class="disc">
+            <label for="disc">Diskon</label>
+            <input type="text" readonly>
+        </div>
+        <div class="total">
+            <label for="total">Total bayar (Rp)</label>
+            <input type="text" readonly>
+        </div>
+        <div class="cta">
+            <button id="print-button">Cetak</button>
+        </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
